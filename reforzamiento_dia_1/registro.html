@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Enlazamos nuestro estylo para el formulario -->
+    <link rel="stylesheet" href="stylo.css">
+    <!-- Enlazamos el archivo de JavaScript-->
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+    <h1>Ejemplo Día 1</h1>
+    <form action="">
+        <table>
+            <tr>
+                <td>
+                    <label for="name">Nombres</label><br>
+                    <input type="text" id="name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="ap1">Primer Apellido</label><br>
+                    <input type="text" id="ap1">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="ap2">Segundo Apellido</label><br>
+                    <input type="text" id="ap2">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="fono">Télefono</label><br>
+                    <input type="number" id="fono" onfocus="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Email</label><br>
+                    <input  id="email" placeholder="direccion@dominio.com" type="email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="direcciones">Direcciones</label><br>
+                    <select name="" id="direcciones">
+                        <option>-</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="dirs"></div>
+                </td>              
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

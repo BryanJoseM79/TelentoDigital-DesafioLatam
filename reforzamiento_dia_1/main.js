@@ -12,6 +12,6 @@ function tabla(){
             add.setAttribute('type', 'text');
             add.setAttribute('id','direccion'+i); // <input type="text" id="direccion1 (con el +i irá creando direccion2, direccion3 etc)">
             add.setAttribute('placeholder', 'Dirección');
-            document.getElementById('dirs').appendChild(add);
+            document.getElementById('dirs').appendChild(add); 
         }
 }

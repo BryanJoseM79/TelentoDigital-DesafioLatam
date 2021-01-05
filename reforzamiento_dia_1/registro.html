@@ -34,7 +34,7 @@
             <tr>
                 <td>
                     <label for="fono">Télefono</label><br>
-                    <input type="number" id="fono" onfocus="">
+                    <input type="number" id="fono" onfocus="fonos()">
                 </td>
             </tr>
             <tr>
@@ -46,7 +46,7 @@
             <tr>
                 <td>
                     <label for="direcciones">Direcciones</label><br>
-                    <select name="" id="direcciones">
+                    <select name="" id="direcciones" onchange="tabla()">
                         <option>-</option>
                         <option value="1">1</option>
                         <option value="2">2</option>

@@ -23,3 +23,5 @@ function tabla(){
     var divisor = document.getElementById('des');
     divisor.parentNode.removeChild(divisor);
 }
+
+

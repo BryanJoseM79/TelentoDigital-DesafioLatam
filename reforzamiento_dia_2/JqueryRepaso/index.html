@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+ <head>
+ <script type="text/JavaScript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ </head>
+ <body>
+     <style>
+         .updatedContent{
+            background-color: aqua;
+            color: black;
+         }
+     </style>
+    <div>old content</div>
+            <script>
+            
+            //oculta los divs de la página
+            $('div').hide();
+            //actualiza el contenido de todos los divs
+            $('div').text('new content');
+            //añade una clase a todos los divs
+            $('div').addClass("updatedContent");
+            //muestra todos los divs
+            $('div').show();
+
+            
+            
+            </script>
+
+            <!-- Lo que hace acá este codigo es cambiar el div con el texto a Old Content a New Content-->
+ </body>
+</html>

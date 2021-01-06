@@ -39,21 +39,36 @@ function tabla(){
             if(alto == 99){
                 alto = 100;
             }
-        var label = document.createAttribute('label'); // <label> </label>
+        var label = document.createElement('label'); // <label> </label>
         // label.setAttribute('for', 'chckbx', 15);
         label.textContent = bajo + '% - ' + alto + '%'; // Sí seleccionamos 5, resultado será 20 y alto tambien, por lo que quedará así; <label> 0% - 20% </label>
-        document.getElementById('dirs').appendChild('label');
+        document.getElementById('dirs').appendChild(label);
 
-        var add = document.createElement('input');
-        add.setAttribute('type', 'checkbox');
-        add.setAttribute('id', 'chckbx'+ 1);
-        var division = document.createElement('div');
-        division.appendChild(add);
-        document.getElementById('dirs').appendChild(division);
+        var add = document.createElement('input'); // <input>
+        add.setAttribute('type', 'checkbox'); // <input type="checkbox">
+        add.setAttribute('id', 'chckbx'+1); // <input type="checkbox" id="chckbx1">
+        var division = document.createElement('div'); // <div></div>
+        division.appendChild(add); // <div> <input type="checkbox" id="chckbx1"> </div>
+        document.getElementById('dirs').appendChild(division); // Acá lo enviamos al documento 
 
         bajo += resultado; // bajo = bajo + resultado;
         alto += resultado; // alto = altto + resultado;
     }
     var divisor = document.getElementById('des');
     divisor.parentNode.removeChild(divisor);
+}
+
+// Función para validar todo lo visto 
+function revisar(){
+    if(document.getElementById('nom1').value == "" 
+    || document.getElementById('nom2').value == "" 
+    || document.getElementById('ap1').value == ""
+    || document.getElementById('ap2').value == ""
+    || document.getElementById('fono').value == ""
+    || document.getElementById('email').value == ""){
+
+        alert('Uno de los campos de texto esta vacio, Por favor revise el formulario :)');
+    }else{
+        alert('Ok, borrare los campos :)')
+    }
 }

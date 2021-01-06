@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylo.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>Formulario con Checkbox</h1>
+    <form action="">
+        <table>
+            <tr>
+                <td>
+                    <label for="nom1">Primer Nombre</label><br>
+                    <input type="text" id="nom1" onblur="espaciosNom1()">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="nom2">Segundo Nombre</label><br>
+                    <input type="text" id="nom2" onblur="espaciosNom2()">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="ap1">Primer Apellido</label><br>
+                    <input type="text" id="ap1">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="ap2">Segundo Apellido</label><br>
+                    <input type="text" id="ap2">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="fono">Télefono</label><br>
+                    <input type="number" id="fono" onfocus="fonos()" onblur="extension()">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Email</label><br>
+                    <input  id="email" placeholder="direccion@dominio.com" type="email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="direcciones">Direcciones</label><br>
+                        <div id="des">
+                            <select name="" id="direcciones" onchange="tabla()">
+                                <option>-</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+
+                            </select>
+                        </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="dirs"></div>
+                </td>              
+            </tr>
+            
+        </table>
+        <button>Registrar</button>
+    </form>
+</body>
+</html>

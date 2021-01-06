@@ -49,15 +49,14 @@
             </tr>
             <tr>
                 <td>
-                    <label for="direcciones">Direcciones</label><br>
+                    <label for="direcciones">Checkbox</label><br>
                         <div id="des">
-                            <select name="" id="direcciones" onchange="tabla()">
+                            <select id="direcciones" onchange="tabla()">
                                 <option>-</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
                                 <option value="5">5</option>
-
                             </select>
                         </div>
                 </td>
@@ -67,9 +66,14 @@
                     <div id="dirs"></div>
                 </td>              
             </tr>
+            <tr>
+                <td>
+                    <button onclick="revisar()">Revisar</button>
+                </td>
+            </tr>
             
         </table>
-        <button>Registrar</button>
+   
     </form>
 </body>
 </html>

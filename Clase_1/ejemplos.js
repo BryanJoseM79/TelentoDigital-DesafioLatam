@@ -7,4 +7,4 @@ class Animal {
     }
 }
    const animal = new Animal('Kratos');
-   console.log(animal.name);
+   console.log(animal.name);  

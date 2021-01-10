@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        class Ampolleta{
+            constructor(potencia, luzBlanca, esLed){
+                this._potencia = potencia;
+                this._luzBlanca = luzBlanca;
+                this._esLed = esLed;
+                this._estaApagada = false;
+        }
+                cambiarConsumo(newPotencia){
+                    this._potencia = newPotencia;  
+        }
+                encender(){
+                    this._estaApagada = false;
+                }
+                apagar(){
+                    this._estaApagada = true;
+                }
+           }      
+
+     //    var watts = document.getElementById('watts').value;
+     //    var luzBlanca = document.getElementById('luzBlanca').value;
+     //    var led = document.getElementById('led').value;
+
+
+        let Ampolleta1 = new Ampolleta(200, 'si', 'no');
+        console.log(Ampolleta1);
+       
+        Ampolleta1.apagar();
+        Ampolleta1.cambiarConsumo(500);
+        console.log(Ampolleta1);
+     /*  Ampolleta1.cambiarConsumo('watts');
+        Ampolleta.encender(encender)
+        console.log(Ampolleta.cambiarConsumo('watts'));
+        
+  */
+    </script>
+
+    
+
+        <h1>Ampolleta</h1>
+    <form action="">
+        <h3>Watts</h3>
+        <input type="number" name="" id="Watts" placeholder="Ej: 100">
+        <h3>Luz Blanca</h3>
+        <input type="text" name="" id="LuzBlanca" placeholder="Si/No">
+        <h3>¿Es Led?</h3>
+        <input type="text" name="" id="led" placeholder="Si/No">
+        <br>
+        <br>
+        <button >Ingresar</button>
+    </form>
+
+   
+</body>
+</html>
